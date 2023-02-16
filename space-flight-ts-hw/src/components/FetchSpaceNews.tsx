@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { IArticles } from "../interfaces/IArticles";
 import { Container, Row, Col } from "react-bootstrap";
+import ArticleComponent from "./ArticleComponent";
 
 const FetchSpaceNews = () => {
   const url = "https://api.spaceflightnewsapi.net/v3/articles";

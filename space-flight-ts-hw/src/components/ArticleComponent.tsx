@@ -14,7 +14,7 @@ const ArticleComponent = (props: ArticlesProps) => {
         <Card.Img variant="top" src={props.article.imageUrl} />
         <Card.Body>
           <Card.Title>{props.article.title}</Card.Title>
-          <Card.Text>{props.article.summary}</Card.Text>
+
           <Button
             variant="info"
             onClick={() => navigate("/article/" + props.article.id)}

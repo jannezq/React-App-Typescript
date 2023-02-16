@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom";
 import { IArticles } from "../interfaces/IArticles";
 import { useState, useEffect } from "react";
-import { Container, Row, Col, Spinner, Card, Button } from "react-bootstrap";
+import { Container, Spinner, Card, Button } from "react-bootstrap";
 
 const ArticleDetailComponent = () => {
   const params = useParams();
@@ -30,12 +30,15 @@ const ArticleDetailComponent = () => {
   }, []);
   return (
     <>
-      <Container className=" h-100">
+      <Container className="inner-area h-100">
         {article ? (
           <>
             <div className="d-flex my-auto">
               <div>
-                <Card.Img src={article.imageUrl}></Card.Img>
+                <Card.Img
+                  src={article.imageUrl}
+                  className="h-100 w-100"
+                ></Card.Img>
               </div>
               <Card>
                 <Card.Body>

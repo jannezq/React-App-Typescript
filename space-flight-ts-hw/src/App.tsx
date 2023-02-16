@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import MyNav from "../src/components/MyNav";
 import FetchSpaceNews from "./components/FetchSpaceNews";
 import ArticleDetailComponent from "./components/ArticleDetailComponent";
+import NotFound from "./components/NotFound";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
             path="/article/:articleId"
             element={<ArticleDetailComponent />}
           />
+          <Route element={<NotFound />} path="*" />
         </Routes>
       </div>
     </BrowserRouter>

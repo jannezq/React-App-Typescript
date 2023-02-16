@@ -13,7 +13,7 @@ const ArticleDetailComponent = () => {
     try {
       let response = await fetch(url + articleId);
       if (response.ok) {
-        let data: IArticles = await response.json();
+        let data = await response.json();
         console.log(data);
         setArticle(data);
       } else {

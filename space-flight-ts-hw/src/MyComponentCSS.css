@@ -1,0 +1,41 @@
+h2 {
+  color: rgb(121, 121, 121);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.card-body {
+  height: 100%;
+  color: white;
+  background-color: rgb(25, 25, 26);
+  border-color: rgb(25, 25, 26);
+}
+
+.card-area img {
+  width: 100%;
+  height: 15vh;
+  object-fit: cover;
+}
+
+.card-area {
+  height: 100%;
+}
+
+.detail-area {
+  height: 90vh;
+  margin-top: 50px;
+}
+
+.jumbo-area {
+  margin-top: 10px;
+  background-image: url("https://images.pexels.com/photos/912050/pexels-photo-912050.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  border-radius: 0 !important;
+  color: white;
+}
+
+hr {
+  background-color: rgb(36, 36, 109);
+}

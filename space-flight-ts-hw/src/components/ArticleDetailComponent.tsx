@@ -30,7 +30,7 @@ const ArticleDetailComponent = () => {
   }, []);
   return (
     <>
-      <Container className="inner-area h-100">
+      <Container className="detail-area">
         {article ? (
           <>
             <div className="d-flex my-auto">

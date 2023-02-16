@@ -10,8 +10,12 @@ const ArticleComponent = (props: ArticlesProps) => {
   const navigate = useNavigate();
   return (
     <>
-      <Card>
-        <Card.Img variant="top" src={props.article.imageUrl} />
+      <Card className="card-area d-flex justify-content-between">
+        <Card.Img
+          variant="top"
+          className="img-fluid"
+          src={props.article.imageUrl}
+        />
         <Card.Body>
           <Card.Title>{props.article.title}</Card.Title>
 
